@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://generatore-di-nebbia.it/sitemap.xml

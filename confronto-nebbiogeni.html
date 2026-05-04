@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <title>Confronto nebbiogeni 2026 — Quale nebbiogeno scegliere? Comparatore gratuito</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Confronto indipendente di 7 nebbiogeni antifurto (Smoke-Defender, UR Fog, Sentinel, Ajax, Mirum, Verisure). Trova il miglior nebbiogeno secondo immobile, volume e budget. Gratuito.">
+  <meta name="keywords" content="miglior nebbiogeno antifurto, confronto nebbiogeni, quale nebbiogeno scegliere, comparatore nebbiogeni, nebbiogeno per casa, nebbiogeno negozio">
+  <link rel="canonical" href="https://generatore-di-nebbia.it/confronto-nebbiogeni.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='80' font-size='80'%3E%E2%9A%96%EF%B8%8F%3C/text%3E%3C/svg%3E">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Confronto nebbiogeni 2026 — Quale scegliere?">
+  <meta property="og:description" content="Confronto indipendente di 7 nebbiogeni antifurto. Trova il migliore secondo immobile, volume e budget.">
+  <meta property="og:url" content="https://generatore-di-nebbia.it/confronto-nebbiogeni.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:image" content="https://generatore-di-nebbia.it/img/confronto-carabinieri.jpg">
+  <meta property="og:site_name" content="Generatore-di-nebbia.it">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Confronto nebbiogeni 2026">
+  <meta name="twitter:description" content="Trova il miglior nebbiogeno per la tua situazione.">
+  <meta name="twitter:image" content="https://generatore-di-nebbia.it/img/confronto-carabinieri.jpg">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Style propre — palette bordeaux/crème, esthétique « test produit magazine » */
+    :root {
+      --comp-primary: #7f1d1d;
+      --comp-primary-light: #991b1b;
+      --comp-accent: #f59e0b;
+      --comp-bg: #fef9f5;
+      --comp-card: #ffffff;
+      --comp-text: #1c1917;
+      --comp-muted: #78716c;
+      --comp-success: #15803d;
+      --comp-danger: #b91c1c;
+    }
+    body { background: var(--comp-bg); color: var(--comp-text); font-family: Georgia, 'Times New Roman', serif; }
+    h1, h2, h3, h4 { font-family: Georgia, 'Times New Roman', serif; }
+    .navbar, .btn, .nav-link, .badge, button, .small, label, input, select, .comp-form-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+
+    .comp-hero {
+      background: var(--comp-primary);
+      background-image: linear-gradient(120deg, #450a0a 0%, #7f1d1d 70%, #991b1b 100%);
+      color: #fef2f2;
+      padding: 4rem 0 5rem;
+      position: relative;
+    }
+    .comp-hero::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 40px;
+      background: var(--comp-bg);
+      clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 80%);
+    }
+    .comp-hero-eyebrow {
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      color: #fcd34d;
+      font-weight: 600;
+    }
+    .comp-form-card {
+      background: var(--comp-card);
+      border: 1px solid #fecaca;
+      border-top: 6px solid var(--comp-primary);
+      border-radius: 4px;
+      padding: 2rem 2rem 1.5rem;
+      box-shadow: 0 18px 40px rgba(127, 29, 29, 0.1);
+      position: relative;
+      z-index: 4;
+      margin-top: -2.5rem;
+    }
+    .comp-form-card h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      color: var(--comp-primary);
+    }
+    .comp-form-label {
+      font-weight: 600;
+      font-size: 0.92rem;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: var(--comp-muted);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .comp-pill-group { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .comp-pill {
+      flex: 0 1 auto;
+      border: 1.5px solid #d6d3d1;
+      background: #fff;
+      color: var(--comp-text);
+      padding: 0.55rem 1rem;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .comp-pill:hover { border-color: var(--comp-primary); }
+    .comp-pill.active {
+      background: var(--comp-primary);
+      color: #fff;
+      border-color: var(--comp-primary);
+    }
+    .comp-input, .comp-select {
+      border: 1.5px solid #d6d3d1;
+      border-radius: 4px;
+      padding: 0.6rem 0.8rem;
+      width: 100%;
+      font-size: 0.95rem;
+      background: #fff;
+    }
+    .comp-input:focus, .comp-select:focus {
+      outline: none;
+      border-color: var(--comp-primary);
+      box-shadow: 0 0 0 3px rgba(127, 29, 29, 0.12);
+    }
+    .comp-submit {
+      background: var(--comp-primary);
+      color: #fff;
+      border: 0;
+      padding: 0.9rem 2rem;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      transition: background 0.2s;
+    }
+    .comp-submit:hover { background: var(--comp-primary-light); }
+    .comp-error { color: var(--comp-danger); font-size: 0.9rem; margin-top: 0.5rem; }
+
+    /* Risultati */
+    .comp-result-block { display: none; margin-top: 3rem; }
+    .comp-winner-card {
+      background: linear-gradient(135deg, #fef9f5 0%, #fef2f2 100%);
+      border: 2px solid var(--comp-primary);
+      border-radius: 8px;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .comp-winner-ribbon {
+      position: absolute;
+      top: 12px;
+      right: -32px;
+      background: var(--comp-accent);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.3rem 2.5rem;
+      transform: rotate(35deg);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .comp-score-circle {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: conic-gradient(var(--comp-primary) calc(var(--score) * 1%), #f5f5f4 0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin: 0 auto;
+    }
+    .comp-score-circle::before {
+      content: "";
+      position: absolute;
+      top: 8px; left: 8px; right: 8px; bottom: 8px;
+      background: #fff;
+      border-radius: 50%;
+    }
+    .comp-score-circle span {
+      position: relative;
+      font-weight: 800;
+      font-size: 1.6rem;
+      color: var(--comp-primary);
+    }
+    .comp-product-card {
+      background: var(--comp-card);
+      border: 1px solid #e7e5e4;
+      border-radius: 6px;
+      padding: 1.5rem;
+      height: 100%;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .comp-product-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(28, 25, 23, 0.08);
+    }
+    .comp-product-rank {
+      font-family: Georgia, serif;
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--comp-primary);
+      line-height: 1;
+    }
+    .comp-product-name { font-weight: 700; font-size: 1.15rem; margin: 0.4rem 0; }
+    .comp-product-price { color: var(--comp-accent); font-weight: 700; font-size: 1.1rem; }
+    .comp-product-features ul { list-style: none; padding: 0; margin: 0.5rem 0; font-size: 0.9rem; }
+    .comp-product-features li { padding: 0.15rem 0; }
+    .comp-product-features .pro::before { content: "✓ "; color: var(--comp-success); font-weight: 700; }
+    .comp-product-features .contro::before { content: "✗ "; color: var(--comp-danger); font-weight: 700; }
+    .comp-table {
+      background: #fff;
+      border: 1px solid #e7e5e4;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .comp-table thead {
+      background: #44403c;
+      color: #f5f5f4;
+    }
+    .comp-table th { padding: 1rem; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .comp-table td { padding: 0.85rem 1rem; vertical-align: middle; }
+    .comp-table tbody tr:nth-child(odd) td { background: #fafaf9; }
+    .comp-savings-block {
+      background: #fffbeb;
+      border-left: 5px solid var(--comp-accent);
+      padding: 1.5rem;
+      border-radius: 4px;
+    }
+    .comp-savings-amount { color: #92400e; font-size: 2.2rem; font-weight: 800; line-height: 1; }
+    .comp-cta-final {
+      background: var(--comp-primary);
+      color: #fff;
+      padding: 0.85rem 1.7rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+    .comp-cta-final:hover { background: var(--comp-primary-light); color: #fff; }
+
+    @media (max-width: 600px) {
+      .comp-hero { padding: 3rem 0 4rem; }
+      .comp-hero h1 { font-size: 1.7rem; }
+      .comp-form-card { padding: 1.25rem; }
+      .comp-pill { flex: 1 1 auto; text-align: center; }
+      .comp-product-rank { font-size: 2rem; }
+    }
+  </style>
+
+  <!-- JSON-LD WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Comparatore nebbiogeni antifurto",
+    "url": "https://generatore-di-nebbia.it/confronto-nebbiogeni.html",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "description": "Confronta 7 nebbiogeni antifurto (Smoke-Defender, UR Fog, Sentinel, Ajax, Mirum, Verisure) e trova il migliore secondo il tuo immobile, volume e budget.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://generatore-di-nebbia.it/"},
+      {"@type": "ListItem", "position": 2, "name": "Confronto nebbiogeni", "item": "https://generatore-di-nebbia.it/confronto-nebbiogeni.html"}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Generatore-di-nebbia.it</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="guida-acquisto.html">Guida all'acquisto</a></li>
+        <li class="nav-item"><a class="nav-link" href="funzionamento.html">Come funziona</a></li>
+        <li class="nav-item"><a class="nav-link active" href="confronto-nebbiogeni.html">Comparatore</a></li>
+        <li class="nav-item"><a class="nav-link" href="confronto.html">Confronto</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="comp-hero">
+  <div class="container">
+    <p class="comp-hero-eyebrow mb-3">Test indipendente · Aggiornato 2026</p>
+    <h1 class="display-5 fw-bold mb-3">Quale nebbiogeno antifurto scegliere?</h1>
+    <p class="lead mb-0" style="max-width: 720px; color: #fee2e2;">
+      Comparatore intelligente: rispondi a 5 domande, confrontiamo 7 nebbiogeni del mercato
+      (Smoke-Defender, UR Fog, Sentinel, Ajax, Mirum, Verisure), ti diamo la nostra raccomandazione argomentata.
+    </p>
+  </div>
+</header>
+
+<main class="pb-5">
+  <div class="container">
+
+    <!-- Form -->
+    <div class="comp-form-card" id="compForm">
+      <h2>Trova il tuo nebbiogeno ideale</h2>
+
+      <!-- 1. Tipo immobile -->
+      <div class="mb-4">
+        <label class="comp-form-label">1. Tipo di immobile</label>
+        <div class="comp-pill-group" id="pillTipo" role="radiogroup" aria-label="Tipo immobile">
+          <button type="button" class="comp-pill" data-value="casa">Casa privata</button>
+          <button type="button" class="comp-pill" data-value="appartamento">Appartamento</button>
+          <button type="button" class="comp-pill" data-value="negozio">Negozio</button>
+          <button type="button" class="comp-pill" data-value="ufficio">Ufficio</button>
+          <button type="button" class="comp-pill" data-value="garage">Garage o capannone</button>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <!-- 2. Volume -->
+        <div class="col-md-6">
+          <label class="comp-form-label">2. Volume da proteggere</label>
+          <select id="selVolume" class="comp-select">
+            <option value="80" selected>Meno di 100 m³</option>
+            <option value="150">100 - 200 m³</option>
+            <option value="300">200 - 400 m³</option>
+            <option value="500">Oltre 400 m³</option>
+          </select>
+        </div>
+
+        <!-- 3. Budget -->
+        <div class="col-md-6">
+          <label class="comp-form-label">3. Budget</label>
+          <select id="selBudget" class="comp-select">
+            <option value="400">Meno di 400 €</option>
+            <option value="800" selected>400 - 800 €</option>
+            <option value="1500">800 - 1500 €</option>
+            <option value="9999">Oltre 1500 €</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row g-3 mt-1">
+        <!-- 4. WiFi -->
+        <div class="col-md-6">
+          <label class="comp-form-label">4. Connessione WiFi disponibile</label>
+          <div class="comp-pill-group" id="pillWifi" role="radiogroup" aria-label="WiFi">
+            <button type="button" class="comp-pill" data-value="si">Sì, ho il WiFi</button>
+            <button type="button" class="comp-pill" data-value="no">No, niente WiFi</button>
+          </div>
+        </div>
+
+        <!-- 5. Esperienza -->
+        <div class="col-md-6">
+          <label class="comp-form-label">5. Esperienza tecnica</label>
+          <div class="comp-pill-group" id="pillEsp" role="radiogroup" aria-label="Esperienza">
+            <button type="button" class="comp-pill" data-value="diy">Faccio io (DIY)</button>
+            <button type="button" class="comp-pill" data-value="pro">Voglio un installatore</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <button type="button" class="comp-submit" id="compSubmit">Confronta i nebbiogeni →</button>
+        <div class="comp-error" id="compError" role="alert" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <!-- Résultats -->
+    <div class="comp-result-block" id="compResult" aria-live="polite">
+
+      <!-- Vincitore -->
+      <h2 class="fw-bold mb-3" style="color: var(--comp-primary);">🏆 Il nostro vincitore</h2>
+      <div class="comp-winner-card mb-5">
+        <div class="comp-winner-ribbon">Top 1</div>
+        <div class="row g-4 align-items-center">
+          <div class="col-md-3 text-center">
+            <div class="comp-score-circle" id="winnerScore" style="--score: 92"><span id="winnerScoreText">9.2</span></div>
+            <p class="small mt-2 mb-0 text-muted">Voto su 10</p>
+          </div>
+          <div class="col-md-9">
+            <p class="text-uppercase small mb-1" style="color: var(--comp-accent); font-weight: 700; letter-spacing: 0.08em;">Migliore scelta</p>
+            <h3 class="fw-bold mb-2" id="winnerName">—</h3>
+            <p class="text-muted mb-3" id="winnerWhy"></p>
+            <div class="row">
+              <div class="col-sm-6">
+                <strong style="color: var(--comp-success);">Punti di forza</strong>
+                <ul class="comp-product-features" id="winnerPros"></ul>
+              </div>
+              <div class="col-sm-6">
+                <strong style="color: var(--comp-danger);">Limiti</strong>
+                <ul class="comp-product-features" id="winnerCons"></ul>
+              </div>
+            </div>
+            <p class="mt-3 mb-0">
+              <span style="color: var(--comp-accent); font-weight: 800; font-size: 1.4rem;" id="winnerPrice">—</span>
+              <a href="/" class="comp-cta-final ms-3" id="winnerCta">Scopri il vincitore →</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Top 3 -->
+      <h2 class="fw-bold mb-4" style="color: var(--comp-primary);">📊 La tua Top 3</h2>
+      <div class="row g-4 mb-5" id="top3Cards">
+        <!-- rempli par JS -->
+      </div>
+
+      <!-- Tabella confronto -->
+      <h2 class="fw-bold mb-4" style="color: var(--comp-primary);">⚖️ Confronto rapido</h2>
+      <div class="table-responsive mb-5">
+        <table class="comp-table table mb-0">
+          <thead>
+            <tr>
+              <th>Modello</th>
+              <th>Prezzo</th>
+              <th>Copertura</th>
+              <th>Abbonamento</th>
+              <th>WiFi</th>
+              <th>Voto</th>
+            </tr>
+          </thead>
+          <tbody id="compTable">
+            <!-- rempli par JS -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Savings vs Verisure -->
+      <div class="comp-savings-block mb-5" id="savingsBlock" style="display: none;">
+        <div class="row align-items-center g-3">
+          <div class="col-md-7">
+            <p class="text-uppercase small mb-1" style="color: #92400e; letter-spacing: 0.08em; font-weight: 700;">💰 Risparmio in 5 anni</p>
+            <h3 class="fw-bold mb-2" style="color: #92400e;">Vs un abbonamento Verisure ZeroVision</h3>
+            <p class="mb-0 small" style="color: #78350f;">
+              Verisure costa circa <strong>4.493 € su 5 anni</strong> (installazione + abbonamento mensile ~65€/mese).
+              Con la nostra raccomandazione, paghi una volta sola.
+            </p>
+          </div>
+          <div class="col-md-5 text-md-end">
+            <div class="comp-savings-amount" id="savingsAmount">— €</div>
+            <p class="small mb-0" style="color: #92400e;">risparmiati su 5 anni</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Final -->
+      <div class="text-center p-4 rounded" style="background: #1c1917; color: #f5f5f4;">
+        <h3 class="fw-bold mb-3" style="color: #fff;">Pronto a scegliere?</h3>
+        <p class="mb-4" style="color: #d6d3d1;">Vai alla pagina del modello vincitore per le caratteristiche dettagliate e l'acquisto.</p>
+        <a href="nostra-scelta.html" class="comp-cta-final" style="background: #fef3c7; color: #7f1d1d;">Vedi la nostra scelta finale →</a>
+        <button type="button" class="btn btn-link mt-3 d-block mx-auto" id="compReset" style="color: #a8a29e;">↻ Rifai il confronto</button>
+      </div>
+
+    </div>
+
+    <!-- Section éducative SEO -->
+    <section class="mt-5 pt-5">
+      <h2 class="fw-bold mb-3" style="color: var(--comp-primary);">Come funziona il nostro comparatore?</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h3 class="h6 fw-bold">Criteri valutati</h3>
+          <p class="text-muted small">
+            Confrontiamo <strong>prezzo iniziale</strong>, <strong>copertura in m³</strong>,
+            <strong>presenza di abbonamento</strong>, <strong>installazione DIY o professionale</strong>,
+            <strong>connettività WiFi</strong> e <strong>compatibilità con allarmi esistenti</strong>.
+          </p>
+          <h3 class="h6 fw-bold mt-4">Filtri applicati</h3>
+          <p class="text-muted small">
+            In base alle tue risposte, escludiamo i modelli inadatti (es. WiFi richiesto se non hai connessione,
+            modelli con copertura insufficiente, soluzioni fuori budget). Poi ordiniamo per voto totale.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h3 class="h6 fw-bold">Modelli analizzati</h3>
+          <ul class="text-muted small">
+            <li><strong>Smoke-Defender</strong> (Pack WiFi e Senza WiFi) — DIY senza abbonamento</li>
+            <li><strong>UR Fog FPUC390</strong> — Marchio italiano, copertura estesa</li>
+            <li><strong>Sentinel S35</strong> — Premium, installazione professionale</li>
+            <li><strong>Ajax Nebbiogeno</strong> — Integrato in ecosistema domotico Ajax</li>
+            <li><strong>Mirum Pro</strong> — Premium italiano, copertura massima</li>
+            <li><strong>Verisure ZeroVision</strong> — Abbonamento di telesorveglianza</li>
+          </ul>
+          <p class="text-muted small">
+            Dati aggiornati a aprile 2026. I prezzi possono variare.
+            Verifica sempre presso il fornitore prima dell'acquisto.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="py-4 border-top mt-5">
+  <div class="container text-center">
+    <p class="mb-1">&copy; <span id="year"></span> Generatore-di-nebbia.it — Guida indipendente</p>
+    <p class="mb-0 small">
+      <a href="nostra-scelta.html" class="text-muted me-3">La nostra scelta</a>
+      <a href="confronto-nebbiogeni.html" class="text-muted me-3">Comparatore</a>
+      <a href="faq.html" class="text-muted me-3">FAQ</a>
+      <a href="privacy-policy.html" class="text-muted">Privacy policy</a>
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // ==== Database produits ====
+  const PRODUCTS = [
+    {
+      nome: "Smoke-Defender Pack WiFi",
+      prezzo: 299,
+      copertura: 100,
+      wifi: true,
+      diy: true,
+      abbonamento: false,
+      pro: ["Senza abbonamento", "Installazione DIY 30 min", "Filtro integrato (residui ridotti)", "Compatibile SmartLife / Tuya"],
+      contro: ["Copertura limitata a 100 m³", "Solo WiFi 2.4 GHz"],
+      voto: 9.2,
+      url: "/"
+    },
+    {
+      nome: "Smoke-Defender Pack Senza WiFi",
+      prezzo: 325,
+      copertura: 100,
+      wifi: false,
+      diy: true,
+      abbonamento: false,
+      pro: ["Funziona senza internet", "Rilevatore filato 12V incluso", "Ideale per garage e capannoni", "3 telecomandi inclusi"],
+      contro: ["Copertura limitata a 100 m³"],
+      voto: 9.0,
+      url: "/"
+    },
+    {
+      nome: "UR Fog FPUC390",
+      prezzo: 650,
+      copertura: 390,
+      wifi: false,
+      diy: false,
+      abbonamento: false,
+      pro: ["Marchio italiano leader", "Copertura 390 m³", "Affidabilità riconosciuta", "Garanzia estesa"],
+      contro: ["Installazione professionale richiesta", "Prezzo elevato"],
+      voto: 8.8,
+      url: "/confronto.html"
+    },
+    {
+      nome: "Sentinel S35",
+      prezzo: 916,
+      copertura: 400,
+      wifi: false,
+      diy: false,
+      abbonamento: false,
+      pro: ["Tecnologia avanzata", "Grande copertura", "Tempo di emissione rapido"],
+      contro: ["Prezzo molto elevato", "Installazione tecnico obbligatoria"],
+      voto: 8.5,
+      url: "/confronto.html"
+    },
+    {
+      nome: "Ajax Nebbiogeno",
+      prezzo: 1200,
+      copertura: 200,
+      wifi: true,
+      diy: false,
+      abbonamento: true,
+      pro: ["Integrazione domotica Ajax", "Notifiche istantanee", "Design curato"],
+      contro: ["Richiede hub Ajax (+200€)", "Abbonamento mensile"],
+      voto: 8.0,
+      url: "/confronto.html"
+    },
+    {
+      nome: "Mirum Pro",
+      prezzo: 1500,
+      copertura: 600,
+      wifi: false,
+      diy: false,
+      abbonamento: false,
+      pro: ["Premium italiano", "Copertura massima 600 m³", "Garanzia estesa"],
+      contro: ["Investimento iniziale molto alto", "Installazione complessa"],
+      voto: 8.7,
+      url: "/confronto.html"
+    },
+    {
+      nome: "Verisure ZeroVision",
+      prezzo: 4493,
+      copertura: 200,
+      wifi: true,
+      diy: false,
+      abbonamento: true,
+      pro: ["Telesorveglianza inclusa", "Marchio noto"],
+      contro: ["Abbonamento obbligatorio (~65€/mese)", "Costo a 5 anni: 4493€", "Installazione obbligatoria"],
+      voto: 6.5,
+      url: "/confronto.html"
+    }
+  ];
+
+  // ==== State ====
+  const state = {
+    tipo: null,
+    volume: 80,
+    budget: 800,
+    wifi: null,
+    esp: null
+  };
+
+  function bindPills(id, key) {
+    const wrap = document.getElementById(id);
+    wrap.querySelectorAll('.comp-pill').forEach(b => {
+      b.addEventListener('click', () => {
+        wrap.querySelectorAll('.comp-pill').forEach(x => x.classList.remove('active'));
+        b.classList.add('active');
+        state[key] = b.dataset.value;
+      });
+    });
+  }
+  bindPills('pillTipo', 'tipo');
+  bindPills('pillWifi', 'wifi');
+  bindPills('pillEsp', 'esp');
+
+  document.getElementById('selVolume').addEventListener('change', e => state.volume = parseInt(e.target.value, 10));
+  document.getElementById('selBudget').addEventListener('change', e => state.budget = parseInt(e.target.value, 10));
+
+  // ==== Validation ====
+  function validate() {
+    const errs = [];
+    if (!state.tipo) errs.push('Seleziona il tipo di immobile.');
+    if (!state.wifi) errs.push('Indica se hai una connessione WiFi.');
+    if (!state.esp) errs.push('Indica la tua esperienza tecnica.');
+    return errs;
+  }
+
+  // ==== Matching ====
+  function matchProducts() {
+    let list = PRODUCTS.map(p => ({ ...p, score: p.voto }));
+
+    // Filtre copertura
+    list = list.filter(p => p.copertura >= state.volume);
+    // Filtre budget
+    list = list.filter(p => p.prezzo <= state.budget);
+    // Pas de WiFi → exclure modèles WiFi-only avec abbonamento (Verisure, Ajax)
+    if (state.wifi === 'no') {
+      list = list.filter(p => !p.abbonamento);
+    }
+    // DIY → bonus
+    if (state.esp === 'diy') {
+      list = list.map(p => ({ ...p, score: p.diy ? p.score + 1 : p.score - 0.5 }));
+    } else {
+      list = list.map(p => ({ ...p, score: !p.diy ? p.score + 0.3 : p.score }));
+    }
+    // Tipo immobile : ajustements légers
+    if (state.tipo === 'garage' && state.wifi === 'no') {
+      list = list.map(p => ({ ...p, score: p.nome.includes('Senza WiFi') ? p.score + 0.5 : p.score }));
+    }
+    if ((state.tipo === 'casa' || state.tipo === 'appartamento') && state.wifi === 'si') {
+      list = list.map(p => ({ ...p, score: p.nome.includes('Pack WiFi') ? p.score + 0.3 : p.score }));
+    }
+
+    list.sort((a, b) => b.score - a.score);
+
+    // Si vide → fallback : tous les produits sans filtre budget/wifi mais avec note baseline
+    if (list.length === 0) {
+      list = PRODUCTS.slice().sort((a, b) => b.voto - a.voto);
+    }
+    return list;
+  }
+
+  // ==== Render ====
+  function renderTop3(list) {
+    const cont = document.getElementById('top3Cards');
+    cont.innerHTML = '';
+    list.slice(0, 3).forEach((p, idx) => {
+      const col = document.createElement('div');
+      col.className = 'col-md-4';
+      const prosHtml = p.pro.slice(0, 3).map(x => `<li class="pro">${x}</li>`).join('');
+      const consHtml = p.contro.slice(0, 2).map(x => `<li class="contro">${x}</li>`).join('');
+      col.innerHTML = `
+        <div class="comp-product-card">
+          <div class="d-flex justify-content-between align-items-start mb-2">
+            <span class="comp-product-rank">#${idx + 1}</span>
+            <span class="badge" style="background: #fef3c7; color: #92400e; padding: 0.4rem 0.7rem;">Voto ${p.voto.toFixed(1)}/10</span>
+          </div>
+          <h3 class="comp-product-name">${p.nome}</h3>
+          <p class="comp-product-price mb-2">${p.prezzo} €</p>
+          <p class="small text-muted mb-2">Copertura: <strong>${p.copertura} m³</strong> · ${p.abbonamento ? 'Con abbonamento' : 'Acquisto unico'}</p>
+          <div class="comp-product-features">
+            <ul>${prosHtml}${consHtml}</ul>
+          </div>
+        </div>`;
+      cont.appendChild(col);
+    });
+  }
+
+  function renderTable(list) {
+    const tb = document.getElementById('compTable');
+    tb.innerHTML = '';
+    list.forEach(p => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td><strong>${p.nome}</strong></td>
+        <td>${p.prezzo} €</td>
+        <td>${p.copertura} m³</td>
+        <td>${p.abbonamento ? '<span style="color: var(--comp-danger);">Sì</span>' : '<span style="color: var(--comp-success);">No</span>'}</td>
+        <td>${p.wifi ? '✓' : '—'}</td>
+        <td><strong style="color: var(--comp-primary);">${p.voto.toFixed(1)}</strong></td>
+      `;
+      tb.appendChild(tr);
+    });
+  }
+
+  function renderWinner(p) {
+    document.getElementById('winnerName').textContent = p.nome;
+    document.getElementById('winnerPrice').textContent = p.prezzo + ' €';
+    document.getElementById('winnerScore').style.setProperty('--score', Math.round(p.voto * 10));
+    document.getElementById('winnerScoreText').textContent = p.voto.toFixed(1);
+    document.getElementById('winnerCta').setAttribute('href', p.url);
+
+    // Why
+    let why;
+    if (p.nome.includes('Smoke-Defender')) {
+      why = `In base alle tue esigenze (${state.tipo}, ${state.volume} m³, budget ${state.budget} €, ${state.wifi === 'si' ? 'WiFi disponibile' : 'senza WiFi'}, ${state.esp === 'diy' ? 'DIY' : 'installatore'}), Smoke-Defender offre il miglior rapporto qualità/prezzo: senza abbonamento, installazione semplice, filtro integrato.`;
+    } else {
+      why = `Per la tua configurazione (${state.tipo}, ${state.volume} m³, budget ${state.budget} €), questo modello è il più adatto del mercato.`;
+    }
+    document.getElementById('winnerWhy').textContent = why;
+
+    document.getElementById('winnerPros').innerHTML = p.pro.map(x => `<li class="pro">${x}</li>`).join('');
+    document.getElementById('winnerCons').innerHTML = p.contro.map(x => `<li class="contro">${x}</li>`).join('');
+  }
+
+  function renderSavings(p) {
+    if (p.nome.includes('Verisure')) {
+      document.getElementById('savingsBlock').style.display = 'none';
+      return;
+    }
+    const verisure5 = 4493;
+    const winner5 = p.prezzo + (p.abbonamento ? 65 * 60 : 0); // 60 mois si abbonamento
+    const saved = verisure5 - winner5;
+    if (saved > 0) {
+      document.getElementById('savingsAmount').textContent = saved.toLocaleString('it-IT') + ' €';
+      document.getElementById('savingsBlock').style.display = 'block';
+    } else {
+      document.getElementById('savingsBlock').style.display = 'none';
+    }
+  }
+
+  // ==== Submit ====
+  document.getElementById('compSubmit').addEventListener('click', () => {
+    const errEl = document.getElementById('compError');
+    const errs = validate();
+    if (errs.length) {
+      errEl.textContent = errs[0];
+      return;
+    }
+    errEl.textContent = '';
+
+    const list = matchProducts();
+    if (list.length === 0) return;
+
+    const winner = list[0];
+    renderWinner(winner);
+    renderTop3(list);
+    renderTable(list);
+    renderSavings(winner);
+
+    document.getElementById('compResult').style.display = 'block';
+    document.getElementById('compResult').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  document.getElementById('compReset').addEventListener('click', () => {
+    document.getElementById('compResult').style.display = 'none';
+    document.getElementById('compForm').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+</script>
+
+</body>
+</html>
